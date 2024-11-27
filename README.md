@@ -1,11 +1,11 @@
 # Project Title 
-The name of the Project and all authors involved
+TODO-lista by Paavo Koivistoinen
 
 ## Demo link:
-Access my site at [google.com](https://google.com)
+Access my site at [google.com](https://todolistasovellus.netlify.app/)
 
 ## How was the workload divided
-How was the workload divided. Who did what? 
+I did the workload by myself, but I had friends who were doing similiar projects so I searched solutions with them a little bit
 
 
 
@@ -21,34 +21,26 @@ How was the workload divided. Who did what?
 - [License](#license)
 
 ## About The App
-[Name of project] is an app that ...
+TODO-lista is an app that let's you set tasks for yourself and save them for later reminders. You can add tasks to it and when you have completed them you can simply just click "merkitse tehdyksi" to cross it over to signify that its completed. Also you can just remove already completed tasks or tasks that are no longer relevants by clicking "poista".
 
-## Screenshots
-Add here atleast one screenshot of the working application 
-`![Writing](https://unsplash.com/photos/VBPzRgd7gfc)`
+## Screenshots 
+`![Writing](todokuva.png)`
 
-Picture by [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
 ## Technologies
-Describe which technologies were used and the role of each in your project. 
-I used the following technologies `html`, `css`, ...
+In this project HTML, CSS and JavaScript was used.
 
 ## Setup
-Write brief instructions on how to run and use your app. For example:
-- download all the files and open index.html in your browser
-- download or clone the repository
-- run `npm install`
-- ...
+You can download all the files to your computer and open them in any code editing software you prefer, for example Visual Studio code. You can now open the index.html file by using something like liveserver that the code editor provides, or you can open the file from your folder using browser.
+If you just want to use the application there is a demo link for it above.
 
 ## Status
-[name of project] is still in progress. `Version 2` will be out soon.
+TODO-lista is ready and deployed
 
 ## Credits
-List of contriubutors and sources you used during the project. Also mention if you used ChatGPT or other AI tools when coding and explain how did you benefit from them.
-- [John Doe](johndoe.com)
-- [Beginners guide to BEM](link-goes-here.com)
+[w3schools](https://www.w3schools.com/jsref/default.asp) and artificial intelligence ChatGPT, which helped me to overcome issues with text duplicating whenever the page reloaded or i couldnt get the buttons to work properly.
 
 ## License
 Choose a license for your project by following this [guide](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
 
-Example: MIT license @ [author](author.com)
+MIT license @ [paaavooo](author.com)

@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const taskInput = document.getElementById('taskInput');
   const todoList = document.getElementById('todoList');
 
-  // Lataa tehtävät localStorage:sta
+  // lataa tehtävät localstoragesta
   loadTasks();
 
-  // Lomakkeen lähetyksen käsittely
+  // lomakkeen lähetyksen käsittely
   form.addEventListener('submit', (e) => {
       e.preventDefault();
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const li = document.createElement('li');
       li.textContent = taskText;
 
-      // Jos tehtävä on merkitty hoidetuksi, lisää "completed"-luokka
+      // jos tehtävä on merkitty hoidetuksi lisää "completed"luokka
       if (completed) {
           li.classList.add('completed');
       }
@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
       completeButton.textContent = 'Merkitse hoidetuiksi';
       completeButton.classList.add('complete');
       completeButton.addEventListener('click', () => {
-          li.classList.add('completed'); // Lisää "completed"-luokka
+          li.classList.add('completed'); // Lisää "completed"luokka
           saveTasks(); // Päivitä tallennus
       });
 
-      // Poista tehtävä -nappi
+      // Poista tehtävä
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Poista';
       removeButton.classList.add('remove');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       saveTasks(); // Päivitä tallennus
   }
 
-  // Tallenna kaikki tehtävät localStorageen
+  // Tallenna kaikki tehtävät localstorageen
   function saveTasks() {
       const tasks = [];
       const taskItems = todoList.querySelectorAll('li');
@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
           const isCompleted = item.classList.contains('completed'); // Tarkista onko tehtävä hoidettu
           tasks.push({ text: taskText, completed: isCompleted });
       });
-      localStorage.setItem('tasks', JSON.stringify(tasks)); // Tallenna JSON-muotoisena
+      localStorage.setItem('tasks', JSON.stringify(tasks)); // Tallenna JSON muotoisena
   }
 
-  // Lataa tehtävät localStorage:sta
+  // Lataa tehtävät localStoragesta
   function loadTasks() {
       const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
       tasks.forEach(task => addTask(task.text, task.completed)); // Lisää jokainen tallennettu tehtävä
